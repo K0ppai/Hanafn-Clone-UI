@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="hidden">
       <ul className="flex">
         <li>
           <NavLink to="/">Home</NavLink>

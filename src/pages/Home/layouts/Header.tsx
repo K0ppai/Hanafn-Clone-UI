@@ -24,7 +24,7 @@ const Header = () => {
     <header
       className={`${
         isScrolled ? "bg-white" : "bg-darkGreen"
-      } fixed z-10 flex h-[7.2rem] w-full items-center justify-between px-[2rem]`}
+      } fixed z-[999] flex h-[7.2rem] w-full items-center justify-between px-[2rem]`}
     >
       <NavLink
         to={"/"}

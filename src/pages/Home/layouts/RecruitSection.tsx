@@ -2,7 +2,7 @@ import PillButton from "../../../components/PillButton";
 
 const RecruitSection = () => {
   return (
-    <section className="bg-recruit flex h-[24rem] flex-col justify-center bg-cover bg-no-repeat px-[2rem]">
+    <section className="bg-recruit bg-[50%] flex h-[24rem] flex-col justify-center bg-cover bg-no-repeat px-[2rem]">
       <p className="text-[2rem] font-[700] text-white tracking-tighter">
         변화를 주도하는 <br />
         글로벌 인재를 기다립니다

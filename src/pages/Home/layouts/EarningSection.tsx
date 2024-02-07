@@ -19,11 +19,11 @@ const EarningSection = () => {
         <div className="flex">
           <PillButton
             label="Business performance"
-            className="bg-download bg-white"
+            className="bg-download bg-white flex-1"
           />
           <PillButton
             label="Databook"
-            className="bg-download ml-[1rem] bg-white"
+            className="bg-download ml-[1rem] bg-white flex-1"
           />
         </div>
         <div className="mt-[2rem]">

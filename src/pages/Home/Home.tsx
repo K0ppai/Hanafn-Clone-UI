@@ -5,6 +5,7 @@ import Header from "./layouts/Header";
 import HeroSection from "./layouts/HeroSection";
 import NewSection from "./layouts/NewsSection";
 import NoticeSection from "./layouts/NoticeSection";
+import RecruitSection from "./layouts/RecruitSection";
 import ReportSection from "./layouts/ReportSection";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       </div>
       <NewSection />
       <NoticeSection />
+      <RecruitSection />
       <Footer />
     </>
   );

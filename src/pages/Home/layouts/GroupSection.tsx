@@ -14,21 +14,19 @@ const GroupSection = () => {
               secondText="and shares happiness"
             />
           }
-          className="h-[24rem] bg-hana bg-sizeGroup bg-PosGp shadow-card"
+          className="shadow-card h-[24rem] bg-hana bg-sizeGroup bg-PosGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Hana Financial Group" />}
           bodyComponent={
-            <GroupBody
-              secondText="211 networks in 25 regions around the world"
-            />
+            <GroupBody secondText="211 networks in 25 regions around the world" />
           }
-          className="h-[24rem] bg-global bg-sizeGroup bg-PosGp shadow-card"
+          className="shadow-card h-[24rem] bg-global bg-sizeGroup bg-PosGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Stock price information" />}
           bodyComponent={<GroupBody isStock={true} />}
-          className="h-[26rem] bg-[#effbf7] bg-stock bg-sizeStock bg-right-bottom shadow-card"
+          className="shadow-card h-[26rem] bg-[#effbf7] bg-stock bg-sizeStock bg-right-bottom"
         />
       </ul>
     </section>

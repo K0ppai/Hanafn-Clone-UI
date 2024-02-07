@@ -18,6 +18,12 @@ export default {
         stock:
           "url('https://www.hanafn.com/assets/img/ko/main/bg-shareprice-m.png')",
         blackMic: "url('https://www.hanafn.com/assets/img/ko/ico-webcast.svg')",
+        recruit:
+          "url('https://www.hanafn.com/assets/img/ko/main/bg-recruit-m.png')",
+        longWhiteArrow:
+          "url('https://www.hanafn.com/assets/img/ko/arrow-right-long-w.svg')",
+        longBlackArrow:
+          "url('https://www.hanafn.com/assets/img/ko/arrow-right-long.svg')",
       },
       backgroundPosition: {
         PosPill: "right 1.6rem center",

@@ -24,6 +24,21 @@ export default {
           "url('https://www.hanafn.com/assets/img/ko/arrow-right-long-w.svg')",
         longBlackArrow:
           "url('https://www.hanafn.com/assets/img/ko/arrow-right-long.svg')",
+        hanaWhiteIcon:
+          "url('https://www.hanafn.com/assets/img/ko/btn-network-w.svg')",
+        hanaBlackIcon:
+          "url('https://www.hanafn.com/assets/img/ko/btn-network.svg')",
+        blackEarth:
+          "url('https://www.hanafn.com/assets/img/ko/btn-language.svg')",
+        whiteEarth:
+          "url('https://www.hanafn.com/assets/img/ko/btn-language-w.svg')",
+        whitePlus:
+          "url('https://www.hanafn.com/assets/img/ko/btn-key-info-w.svg')",
+        blackPlus:
+          "url('https://www.hanafn.com/assets/img/ko/btn-key-info.svg')",
+        whiteHamburger:
+          "url('https://www.hanafn.com/assets/img/ko/btn-menu-w.svg')",
+        blackHamburger: "url('https://www.hanafn.com/assets/img/ko/btn-menu.svg')",
       },
       backgroundPosition: {
         PosPill: "right 1.6rem center",

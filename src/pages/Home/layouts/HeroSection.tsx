@@ -1,18 +1,27 @@
+import { useSelector } from "react-redux";
+import { selectScreen } from "../../../redux/slice/homeSlice";
+
 const HeroSection = () => {
+  const largeScreen = useSelector(selectScreen);
+  const largeImg =
+    "https://www.hanafn.com:8002/upload/common/upeditor/10000103/20230518//20230518085527647.jpg";
+  const smallImg =
+    "https://www.hanafn.com:8002/upload/common/upeditor/10000103/20230518//20230518085614277.jpg";
+
   return (
-    <section className="relative h-[59rem] overflow-hidden pt-[7.2rem]">
-      <figure className="bg-darkGreen px-[2rem]">
+    <section className="relative h-[59rem] overflow-hidden pt-[7.2rem] lg:pt-[84px] lg:h-[640px]">
+      <figure className="max-w-[1280px] bg-darkGreen px-[2rem] lg:mx-auto lg:px-[40px]">
         <img
           src="https://www.hanafn.com:8002/upload/common/upeditor/10000103/20230518//20230518085741227.png"
           alt=""
-          className="absolute z-[90] w-[32rem]"
+          className="absolute z-[90] w-[32rem] max-w-full lg:w-[612px] lg:mt-[40px]"
         />
       </figure>
-      <figure className="absolute top-0 z-0 w-full h-full">
+      <figure className="absolute left-[50%] top-0 h-full w-full translate-x-[-50%]">
         <img
-          src="https://www.hanafn.com:8002/upload/common/upeditor/10000103/20230518//20230518085614277.jpg"
+          src={largeScreen ? largeImg : smallImg}
           alt=""
-          className="h-full object-cover w-full"
+          className="h-full w-full object-cover"
         />
       </figure>
     </section>

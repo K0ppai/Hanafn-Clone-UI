@@ -17,6 +17,7 @@ export default {
           "url('https://www.hanafn.com/assets/img/ko/main/bg-global.png')",
         stock:
           "url('https://www.hanafn.com/assets/img/ko/main/bg-shareprice-m.png')",
+        blackMic: "url('https://www.hanafn.com/assets/img/ko/ico-webcast.svg')",
       },
       backgroundPosition: {
         PosPill: "right 1.6rem center",
@@ -30,6 +31,9 @@ export default {
         darkGreen: "#228d55",
         earning: "rgba(32, 59, 60, .95)",
         main: "#f5fbfa",
+      },
+      boxShadow: {
+        card: "-3px 4px 20px 0 rgba(177, 201, 201, .35)",
       },
     },
   },

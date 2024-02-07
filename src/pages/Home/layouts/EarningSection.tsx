@@ -2,7 +2,7 @@ import PillButton from "../../../components/PillButton";
 
 const EarningSection = () => {
   return (
-    <div className="bg-earning translate-y-[-6rem] rounded-[1em] p-[3rem] text-base font-[600] backdrop-blur-[10px]">
+    <div className="bg-earning translate-y-[-6rem] rounded-[1em] p-[3rem] text-base font-[600] backdrop-blur-[10px] mb-[4rem]">
       <h2 className="text-[2.2rem] font-[700] leading-[3rem] text-white">
         <span className="text-[16px]">Hana Financial Group </span>
         <br />

@@ -1,27 +1,34 @@
-import React from "react";
+import GroupBody from "../../../components/GroupBody";
+import GroupLink from "../../../components/GroupLink";
 import GroupCard from "../components/GroupCard";
 
 const GroupSection = () => {
   return (
-    <section>
-      <ul className="flex flex-col gap-y-[4rem]">
+    <section className="mb-[4rem] translate-y-[-6rem]">
+      <ul className="flex flex-col gap-[4rem] lg:flex-row">
         <GroupCard
-          linkText="Hana Financial Group"
-          firstText="Finance that grows together"
-          secondText="and shares happiness"
-          className="bg-hana bg-PosGp bg-sizeGroup h-[24rem]"
-          isStock={false}
+          linkComponent={<GroupLink linkText="Hana Financial Group" />}
+          bodyComponent={
+            <GroupBody
+              firstText="Finance that grows together"
+              secondText="and shares happiness"
+            />
+          }
+          className="h-[24rem] bg-hana bg-sizeGroup bg-PosGp shadow-card"
         />
         <GroupCard
-          linkText="Hana Financial Group"
-          secondText="211 networks in 25 regions around the world"
-          className="bg-global bg-PosGp bg-sizeGroup h-[24rem]"
-          isStock={false}
+          linkComponent={<GroupLink linkText="Hana Financial Group" />}
+          bodyComponent={
+            <GroupBody
+              secondText="211 networks in 25 regions around the world"
+            />
+          }
+          className="h-[24rem] bg-global bg-sizeGroup bg-PosGp shadow-card"
         />
         <GroupCard
-          linkText="Stock price information"
-          isStock={true}
-          className="bg-stock bg-sizeStock bg-[#effbf7] bg-right-bottom h-[26rem]"
+          linkComponent={<GroupLink linkText="Stock price information" />}
+          bodyComponent={<GroupBody isStock={true} />}
+          className="h-[26rem] bg-[#effbf7] bg-stock bg-sizeStock bg-right-bottom shadow-card"
         />
       </ul>
     </section>

@@ -22,6 +22,7 @@ export default {
       backgroundPosition: {
         PosPill: "right 1.6rem center",
         PosGp: "right 1.8rem bottom 2.8rem",
+        PosAnnounce: "right 2rem center",
       },
       backgroundSize: {
         sizeStock: "20.8rem 13rem",

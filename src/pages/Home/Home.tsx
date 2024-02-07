@@ -3,7 +3,7 @@ import Footer from "./layouts/Footer";
 import GroupSection from "./layouts/GroupSection";
 import Header from "./layouts/Header";
 import HeroSection from "./layouts/HeroSection";
-import NewSection from "./layouts/NewSection";
+import NewSection from "./layouts/NewsSection";
 import NoticeSection from "./layouts/NoticeSection";
 import ReportSection from "./layouts/ReportSection";
 

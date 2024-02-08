@@ -1,5 +1,9 @@
 import NewsLink from "../../../components/NewsLink";
-
+import { selectScreen } from "../../../redux/slice/homeSlice";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { newsDatas } from "../../../data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -8,41 +12,11 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-import { selectScreen } from "../../../redux/slice/homeSlice";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+
 
 const NewSection = () => {
   const largeScreen = useSelector(selectScreen);
   const [id, setId] = useState("");
-
-  const newsData = [
-    {
-      id: "1",
-      imgSrc:
-        "https://www.hanafn.com:8002/upload/common/upeditor/10000084/20240205//20240205061654676.jpg",
-      p: "하나은행, 남대문시장에 소상공인을 위한 특화점포 신설한다!",
-    },
-    {
-      id: "2",
-      imgSrc:
-        "https://www.hanafn.com:8002/upload/common/upeditor/10000084/20240205//20240205061654676.jpg",
-      p: "하나은행, 남대문시장에 소상공인을 위한 특화점포 신설한다!",
-    },
-    {
-      id: "3",
-      imgSrc:
-        "https://www.hanafn.com:8002/upload/common/upeditor/10000084/20240205//20240205061654676.jpg",
-      p: "하나은행, 남대문시장에 소상공인을 위한 특화점포 신설한다!",
-    },
-    {
-      id: "4",
-      imgSrc:
-        "https://www.hanafn.com:8002/upload/common/upeditor/10000084/20240205//20240205061654676.jpg",
-      p: "하나은행, 남대문시장에 소상공인을 위한 특화점포 신설한다!",
-    },
-  ];
 
   return (
     <section className="px-[2rem] pb-[4.5rem] pt-[4rem] lg:p-[40px] lg:pt-[80px]">
@@ -63,13 +37,17 @@ const NewSection = () => {
             },
           }}
         >
-          {newsData.map((data) => {
+          {newsDatas.map((data) => {
             return (
-              <SwiperSlide className="flex flex-col">
+              <SwiperSlide className="flex flex-col" key={data.id}>
                 <Link
                   to={"/"}
-                  onMouseEnter={() => setId(data.id)}
-                  onMouseLeave={() => setId("false")}
+                  onMouseEnter={() => {
+                    largeScreen && setId(data.id);
+                  }}
+                  onMouseLeave={() => {
+                    largeScreen && setId("false");
+                  }}
                 >
                   <figure className="mt-[1.6rem] overflow-hidden rounded-[1rem]">
                     <img

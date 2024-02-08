@@ -15,3 +15,15 @@ body {
   line-height: 1.4;
   color: #222;
 }
+
+.swiper-pagination {
+  position: unset;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+  width: 25px;
+  border-radius: 9999px;
+}

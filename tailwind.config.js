@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      lg: "1025px",
+    },
     extend: {
       backgroundImage: {
         logo: "url('https://www.hanafn.com/assets/img/ko/logo-w.svg')",

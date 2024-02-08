@@ -11,8 +11,8 @@ const NewsLink = ({ className }: { className?: string }) => {
     <div className={`${className} flex justify-between`}>
       <h2 className="text-[1.8rem] font-[600]">하나소식</h2>
       <Link to={"/"} className="flex items-center">
-        <span className="text-transparent">More</span>
-        {largeScreen ? <FaArrowRightLong /> : <IoIosArrowForward />}
+        <span className="text-transparent lg:text-current lg:mr-4 lg:font-semibold">More</span>
+        {largeScreen ? <FaArrowRightLong className="lg:text-[16px]" /> : <IoIosArrowForward />}
       </Link>
     </div>
   );

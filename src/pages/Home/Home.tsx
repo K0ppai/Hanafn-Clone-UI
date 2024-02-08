@@ -33,7 +33,7 @@ const Home = () => {
     <>
       <Header />
       <HeroSection />
-      <div className="bg-main px-[2rem] lg:px-[40px]">
+      <div className="bg-main px-[2rem] lg:px-[40px] lg:pb-[60px]">
         <div className="mx-auto lg:max-w-[1280px]">
           <EarningSection />
           <GroupSection />

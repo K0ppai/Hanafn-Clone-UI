@@ -4,6 +4,7 @@ export default {
   theme: {
     screens: {
       lg: "1025px",
+      xl: "1230px",
     },
     extend: {
       backgroundImage: {

@@ -13,7 +13,6 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 
-
 const NewSection = () => {
   const largeScreen = useSelector(selectScreen);
   const [id, setId] = useState("");

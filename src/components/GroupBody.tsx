@@ -26,15 +26,17 @@ const GroupBody = ({
 
   return (
     <div
-      className={`h- relative p-[3rem] lg:flex lg:flex-grow lg:flex-col lg:px-[30px] lg:pb-[36px] lg:pt-[26px] ${
-        isReport ? "border-b pt-0" : "pt-[3.4rem]"
+      className={`h- relative p-[3rem] lg:flex lg:flex-grow lg:flex-col lg:overflow-hidden ${
+        isReport
+          ? "border-b pt-0 lg:border-0 lg:pt-0 lg:px-[30px]"
+          : "pt-[3.4rem] lg:px-[30px] lg:pb-[36px] lg:pt-[26px]"
       }`}
     >
       {isStock && <StockCard />}
       <p
         className={` font-[700] ${
           isReport
-            ? "mb-[2.6rem] mt-[53px] text-[1.8rem]"
+            ? "mb-[2.6rem] mt-[53px] text-[1.8rem] lg:mb-[32px] lg:mt-auto lg:text-[22px]"
             : "text-[2.2rem] lg:text-[22px]"
         }`}
       >
@@ -54,17 +56,17 @@ const GroupBody = ({
         <img
           src={imgSrc}
           alt=""
-          className="absolute bottom-[9.4rem] right-0 h-[8rem] w-[12rem]"
+          className="absolute bottom-[9.4rem] right-0 h-[8rem] w-[12rem] lg:h-[107px] lg:bottom-[27px] lg:w-[161px] lg:right-[-20px]"
         />
       )}
       {isReport && firstBtnLabel && secondBtnLabel && (
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-col lg:gap-y-[10px]">
           <PillButton
-            className="flex-1 bg-[#f2f2f2] bg-download font-semibold"
+            className="flex-1 bg-[#f2f2f2] bg-download font-semibold lg:w-fit"
             label={firstBtnLabel}
           />
           <PillButton
-            className={`ml-[1rem] flex-1 bg-[#f2f2f2] font-semibold ${
+            className={`ml-[1rem] flex-1 bg-[#f2f2f2] font-semibold lg:ml-0 lg:w-fit ${
               isMic ? "bg-blackMic" : "bg-download"
             }`}
             label={secondBtnLabel}

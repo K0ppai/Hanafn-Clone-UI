@@ -11,9 +11,9 @@ const GroupCard = ({
 }) => {
   return (
     <li
-      className={`${className} ${
+      className={`${
         isReport ? "" : "rounded-[1rem]"
-      } bg-no-repeat lg:flex-1 lg:h-[280px] lg:flex lg:flex-col`}
+      } bg-no-repeat lg:flex lg:h-[280px] lg:flex-1 lg:flex-col ${className}`}
     >
       {linkComponent}
       {bodyComponent}

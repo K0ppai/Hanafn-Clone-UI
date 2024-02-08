@@ -14,7 +14,7 @@ const GroupSection = () => {
               secondText="행복을 나누는 금융"
             />
           }
-          className="h-[24rem] bg-hana bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
+          className="h-[24rem] bg-hana bg-white bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Hana Financial Group" />}
@@ -24,7 +24,7 @@ const GroupSection = () => {
               secondText="211개의 네트워크"
             />
           }
-          className="h-[24rem] bg-global bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
+          className="h-[24rem] bg-global bg-white bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Stock price information" />}

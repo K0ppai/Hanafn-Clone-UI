@@ -38,19 +38,23 @@ export default {
           "url('https://www.hanafn.com/assets/img/ko/btn-key-info.svg')",
         whiteHamburger:
           "url('https://www.hanafn.com/assets/img/ko/btn-menu-w.svg')",
-        blackHamburger: "url('https://www.hanafn.com/assets/img/ko/btn-menu.svg')",
+        blackHamburger:
+          "url('https://www.hanafn.com/assets/img/ko/btn-menu.svg')",
+        reportMic:
+          "url('https://www.hanafn.com/assets/img/ko/main/bg-result.png')",
       },
       backgroundPosition: {
         PosPill: "right 1.6rem center",
         PosGp: "right 1.8rem bottom 2.8rem",
         PosAnnounce: "right 2rem center",
-        lgPosGp: 'right 30px bottom 30px'
+        lgPosGp: "right 30px bottom 30px",
       },
       backgroundSize: {
         sizeStock: "20.8rem 13rem",
         sizeGroup: "7.2rem 7.2rem",
-        lgSizeGp: '80px 80px',
-        lgSizeStock: '240px 160px'
+        lgSizeGp: "80px 80px",
+        lgSizeStock: "240px 160px",
+        lgSizeMic: "60px 88px",
       },
       colors: {
         darkGreen: "#228d55",

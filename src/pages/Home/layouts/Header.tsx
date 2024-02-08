@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        isScrolled ? "bg-white" : "bg-darkGreen"
+        isScrolled ? "bg-white" : "bg-transparent"
       } fixed z-[999] flex h-[7.2rem] w-full items-center justify-between px-[2rem] transition-all duration-300 ease-out lg:px-[40px]`}
     >
       <NavLink

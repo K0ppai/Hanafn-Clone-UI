@@ -45,7 +45,7 @@ const NewSection = () => {
   ];
 
   return (
-    <section className="px-[2rem] pb-[4.5rem] pt-[4rem]">
+    <section className="px-[2rem] pb-[4.5rem] pt-[4rem] lg:p-[40px] lg:pt-[80px]">
       <div className="mx-auto max-w-[1280px]">
         <NewsLink />
         <Swiper

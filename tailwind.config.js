@@ -20,6 +20,8 @@ export default {
         blackMic: "url('https://www.hanafn.com/assets/img/ko/ico-webcast.svg')",
         recruit:
           "url('https://www.hanafn.com/assets/img/ko/main/bg-recruit-m.png')",
+        lgRecruit:
+          "url('https://www.hanafn.com/assets/img/ko/main/bg-recruit.png')",
         longWhiteArrow:
           "url('https://www.hanafn.com/assets/img/ko/arrow-right-long-w.svg')",
         longBlackArrow:
@@ -48,6 +50,7 @@ export default {
         PosGp: "right 1.8rem bottom 2.8rem",
         PosAnnounce: "right 2rem center",
         lgPosGp: "right 30px bottom 30px",
+        lgPosRecruit: "50% center",
       },
       backgroundSize: {
         sizeStock: "20.8rem 13rem",

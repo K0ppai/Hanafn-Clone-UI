@@ -44,10 +44,13 @@ export default {
         PosPill: "right 1.6rem center",
         PosGp: "right 1.8rem bottom 2.8rem",
         PosAnnounce: "right 2rem center",
+        lgPosGp: 'right 30px bottom 30px'
       },
       backgroundSize: {
         sizeStock: "20.8rem 13rem",
         sizeGroup: "7.2rem 7.2rem",
+        lgSizeGp: '80px 80px',
+        lgSizeStock: '240px 160px'
       },
       colors: {
         darkGreen: "#228d55",

@@ -10,23 +10,26 @@ const GroupSection = () => {
           linkComponent={<GroupLink linkText="Hana Financial Group" />}
           bodyComponent={
             <GroupBody
-              firstText="Finance that grows together"
-              secondText="and shares happiness"
+              firstText="함께 성장하며"
+              secondText="행복을 나누는 금융"
             />
           }
-          className="shadow-card h-[24rem] bg-hana bg-sizeGroup bg-PosGp"
+          className="h-[24rem] bg-hana bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Hana Financial Group" />}
           bodyComponent={
-            <GroupBody secondText="211 networks in 25 regions around the world" />
+            <GroupBody
+              firstText="전 세계 25개 지역"
+              secondText="211개의 네트워크"
+            />
           }
-          className="shadow-card h-[24rem] bg-global bg-sizeGroup bg-PosGp"
+          className="h-[24rem] bg-global bg-sizeGroup bg-PosGp shadow-card lg:bg-lgPosGp lg:bg-lgSizeGp"
         />
         <GroupCard
           linkComponent={<GroupLink linkText="Stock price information" />}
           bodyComponent={<GroupBody isStock={true} />}
-          className="shadow-card h-[26rem] bg-[#effbf7] bg-stock bg-sizeStock bg-right-bottom"
+          className="h-[26rem] bg-[#effbf7] bg-stock bg-sizeStock bg-right-bottom shadow-card lg:bg-lgSizeStock lg:bg-right-bottom"
         />
       </ul>
     </section>

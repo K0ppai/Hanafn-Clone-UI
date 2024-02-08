@@ -13,7 +13,7 @@ const GroupCard = ({
     <li
       className={`${className} ${
         isReport ? "" : "rounded-[1rem]"
-      } bg-no-repeat lg:flex-1`}
+      } bg-no-repeat lg:flex-1 lg:h-[280px] lg:flex lg:flex-col`}
     >
       {linkComponent}
       {bodyComponent}

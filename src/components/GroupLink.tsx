@@ -9,9 +9,9 @@ const GroupLink = ({
 }) => {
   return (
     <div
-      className={`flex h-[6rem] items-center ${
+      className={`${
         isReport ? "" : "border-b border-[##eee]"
-      } px-[3rem]`}
+      } flex h-[6rem] items-center px-[3rem] lg:min-h-[60px] lg:px-[30px]`}
     >
       <Link
         to={"/"}

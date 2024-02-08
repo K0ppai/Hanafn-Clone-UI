@@ -1,11 +1,13 @@
+import { useSelector } from "react-redux";
 import StockCard from "../pages/Home/components/StockCard";
 import PillButton from "./PillButton";
+import { selectScreen } from "../redux/slice/homeSlice";
 
 const GroupBody = ({
   isStock = false,
   firstText,
   secondText,
-  isReport,
+  isReport = false,
   imgSrc,
   firstBtnLabel,
   secondBtnLabel,
@@ -20,18 +22,34 @@ const GroupBody = ({
   secondBtnLabel?: string;
   isMic?: boolean;
 }) => {
+  const largeScreen = useSelector(selectScreen);
+
   return (
-    <div className={`p-[3rem] relative ${isReport ? "pt-0 border-b" : "pt-[3.4rem]"}`}>
+    <div
+      className={`h- relative p-[3rem] lg:flex lg:flex-grow lg:flex-col lg:px-[30px] lg:pb-[36px] lg:pt-[26px] ${
+        isReport ? "border-b pt-0" : "pt-[3.4rem]"
+      }`}
+    >
       {isStock && <StockCard />}
       <p
         className={` font-[700] ${
-          isReport ? "mb-[2.6rem] mt-[53px] text-[1.8rem]" : "text-[2.2rem]"
+          isReport
+            ? "mb-[2.6rem] mt-[53px] text-[1.8rem]"
+            : "text-[2.2rem] lg:text-[22px]"
         }`}
       >
         <span>{firstText}</span>
         <br />
         <span>{secondText}</span>
       </p>
+      {largeScreen && !isReport && !isStock && (
+        <p className="mt-auto text-[14px] text-[#666]">
+          <span>직원, 손님, 사회 모두가 행복한</span>
+          <br />
+          <span>금융회사로 성장해갑니다</span>
+        </p>
+      )}
+
       {isReport && imgSrc && (
         <img
           src={imgSrc}

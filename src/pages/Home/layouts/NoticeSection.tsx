@@ -38,7 +38,7 @@ const NoticeSection = () => {
                 </p>
                 <Link
                   to={"/"}
-                  className="absolute left-0 top-0 h-full w-full bg-download bg-PosAnnounce bg-no-repeat text-transparent lg:relative lg:h-fit lg:w-fit lg:bg-right lg:pr-[26px] lg:font-bold lg:text-current lg:hover:text-green-400"
+                  className="absolute left-0 top-0 h-full w-full bg-download bg-PosAnnounce bg-no-repeat text-transparent lg:relative lg:h-fit lg:w-fit lg:bg-right lg:pr-[26px] lg:font-bold lg:text-current lg:hover:text-[#009178]"
                 >
                   {data.label}
                 </Link>

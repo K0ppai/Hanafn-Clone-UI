@@ -45,6 +45,7 @@
     <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
     <li><a href="https://react.dev/">React</a></li>
     <li><a href="https://vitejs.dev/">Vite</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
   </ul>
 
 <!-- Features -->

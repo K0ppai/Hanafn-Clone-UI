@@ -13,7 +13,7 @@ const ReportSection = () => {
             bodyComponent={
               <GroupBody
                 firstText="2022년"
-                secondText="지속가능경영보고서"
+                secondText="연차 보고서"
                 imgSrc={esgImgSrc}
                 firstBtnLabel="PDF(국문)"
                 secondBtnLabel="PDF(국문)"
@@ -30,7 +30,7 @@ const ReportSection = () => {
             bodyComponent={
               <GroupBody
                 firstText="2022년"
-                secondText="지속가능경영보고서"
+                secondText="연차 보고서"
                 imgSrc={anualImgSrc}
                 firstBtnLabel="Annual Report(Full)"
                 secondBtnLabel="Annual Report(Only)"
@@ -46,7 +46,7 @@ const ReportSection = () => {
           bodyComponent={
             <GroupBody
               firstText="2022년"
-              secondText="지속가능경영보고서"
+              secondText="연차 보고서"
               firstBtnLabel="PDF"
               secondBtnLabel="Web Casting"
               isReport={true}

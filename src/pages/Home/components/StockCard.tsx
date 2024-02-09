@@ -11,7 +11,7 @@ const StockCard = () => {
       </p>
       <p className="text-[#666] mt-6">
         Compared to the previous day -900 won (-1.63%)
-        <span className="relative ml-[1.2rem] before:absolute before:left-0 before:top-[20%] before:block before:border-l-[0.7rem] before:border-r-[0.7rem] before:border-t-[1rem] before:border-[#1c8ff0] before:border-l-transparent before:border-r-transparent" />
+        <span className="relative ml-[1.2rem] before:mt-1 before:absolute before:left-0 before:top-[20%] before:block before:border-l-[0.7rem] before:border-r-[0.7rem] before:border-t-[1rem] before:border-[#1c8ff0] before:border-l-transparent before:border-r-transparent" />
       </p>
     </>
   );

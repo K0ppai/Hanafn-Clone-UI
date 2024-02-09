@@ -28,13 +28,13 @@ const NoticeSection = () => {
           <ul className="flex flex-col gap-y-[1rem] lg:flex-grow lg:flex-row">
             {announceDatas.map((data) => (
               <li
-                className="relative flex h-[4.8rem] items-center justify-between rounded-[0.6rem] border border-[#ddd] px-[2rem] lg:h-auto lg:flex-1 lg:flex-col lg:items-start lg:border-0 lg:border-l-[1.5px] lg:pl-[20px] lg:pr-0"
+                className="relative flex h-[4.8rem] items-center justify-between rounded-[0.6rem] border border-[#ddd] px-[2rem] lg:h-auto lg:flex-1 lg:flex-col lg:items-start lg:border-0 lg:border-l-[1px] lg:pl-[20px] lg:rounded-none lg:pr-0"
                 key={data.id}
               >
-                <p className="text-[1.6rem] font-[600] lg:text-[16px]">
+                <p className="text-[1.6rem] font-[600] lg:text-[16px] lg:text-left lg:tracking-tighter">
                   {data.p}
                   {largeScreen && <br />}
-                  하나금융지주회사 현황
+                  하나금융지주회사
                 </p>
                 <Link
                   to={"/"}

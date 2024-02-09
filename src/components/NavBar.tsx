@@ -10,7 +10,7 @@ const NavBar = ({
   setIsHover: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
-    <div className="hidden text-white lg:block">
+    <div className="hidden text-white lg:flex absolute justify-center w-full">
       <ul className="flex">
         <li
           onMouseEnter={() => setIsHover(true)}
@@ -20,7 +20,7 @@ const NavBar = ({
             to="/"
             className={`${
               isScrolled || isHover ? "text-black" : ""
-            } px-[20px] text-[14px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
+            } px-[20px] text-[14px] lg:text-[18px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
           >
             그룹소개
           </NavLink>
@@ -33,7 +33,7 @@ const NavBar = ({
             to="/"
             className={`${
               isScrolled || isHover ? "text-black" : ""
-            } px-[20px] text-[14px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
+            } px-[20px] text-[14px] lg:text-[18px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
           >
             기업지배구조
           </NavLink>
@@ -46,7 +46,7 @@ const NavBar = ({
             to="/"
             className={`${
               isScrolled || isHover ? "text-black" : ""
-            } px-[20px] text-[14px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
+            } px-[20px] text-[14px] lg:text-[18px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
           >
             ESG경영
           </NavLink>
@@ -59,7 +59,7 @@ const NavBar = ({
             to="/"
             className={`${
               isScrolled || isHover ? "text-black" : ""
-            } px-[20px] text-[14px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
+            } px-[20px] text-[14px] lg:text-[18px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
           >
             투자정보
           </NavLink>
@@ -72,7 +72,7 @@ const NavBar = ({
             to="/"
             className={`${
               isScrolled || isHover ? "text-black" : ""
-            } px-[20px] text-[14px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
+            } px-[20px] text-[14px] lg:text-[18px] font-bold transition-all duration-300 ease-in-out hover:text-[#009178] xl:px-[30px]`}
           >
             PR센터
           </NavLink>

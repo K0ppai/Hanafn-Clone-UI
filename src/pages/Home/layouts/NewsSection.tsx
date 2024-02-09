@@ -22,15 +22,15 @@ const NewSection = () => {
       <div className="mx-auto max-w-[1280px]">
         <NewsLink />
         <Swiper
-          // pagination={pagination}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
           className="mySwiper"
           slidesPerView={1}
+          spaceBetween={20}
           breakpoints={{
-            1024: {
+            1025: {
               slidesPerView: 4,
               spaceBetween: 35,
             },

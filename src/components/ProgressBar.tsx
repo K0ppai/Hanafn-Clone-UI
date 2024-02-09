@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProgressBar = ({ isScrolled }: { isScrolled: boolean }) => {
   const [scrollPercent, setScrollPercent] = useState(0);
@@ -10,7 +10,6 @@ const ProgressBar = ({ isScrolled }: { isScrolled: boolean }) => {
       const scrollY = window.scrollY;
 
       const scrollPercent = (scrollY / (documentHeight - windowHeight)) * 100;
-      // console.log(scrollPercent);
       setScrollPercent(scrollPercent);
     };
 

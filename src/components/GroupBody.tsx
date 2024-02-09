@@ -56,7 +56,7 @@ const GroupBody = ({
         <img
           src={imgSrc}
           alt=""
-          className="absolute bottom-[9.4rem] right-0 h-[8rem] w-[12rem] lg:h-[107px] lg:bottom-[27px] lg:w-[161px] lg:right-[-20px]"
+          className="absolute bottom-[9.4rem] right-0 h-[8rem] w-[12rem] lg:h-[107px] lg:bottom-[27px] lg:w-[161px] lg:right-[-20px] shadow-card"
         />
       )}
       {isReport && firstBtnLabel && secondBtnLabel && (
